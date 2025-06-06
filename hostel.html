@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel - Gore English School,Chousala</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+  body{
+    background-color: #2c0f49; 
+  }
+</style>
+<body>
+  <header>
+    <div class="container">
+      <div class="school-name">
+        <h1>Gore English School, Chousala</h1>
+      </div>
+      <img src="/assets/images/v.png" alt="School Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="class.html" class="nav-link">Classes</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="admission.html" class="nav-link">Admission</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+     <!-- Image Slideshow -->
+     <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="/assets/images/hostel.jpg" alt="Slide 1">
+      </div>
+      <div class="mySlides">
+        <img src="/assets/images/room.jpg" alt="Slide 2">
+      </div>
+      <div class="mySlides">
+        <img src="/assets/images/room1.jpg" alt="Slide 3">
+      </div>
+      <div class="mySlides">
+        <img src="/assets/images/mess.jpg" alt="Slide 4">
+      </div>
+      <div class="mySlides">
+        <img src="/assets/images/mess1.jpg" alt="Slide 5">
+      </div>
+      <div class="mySlides">
+        <img src="/assets/images/washroom.jpg" alt="Slide 6"style="height: 500px;width: 1250px;">
+      </div>
+    
+    </div>
+
+    <script>
+      let slideIndex = 0;
+
+      // Array of image sources
+      const images = [
+        "hostel.jpg",
+        "room.jpg",
+        "room1.jpg",
+        "room2.jpg",
+        "mess.jpg",
+        "mess1.jpg",
+        "washroom.jpg"
+      ];
+
+      function showSlides() {
+        let slides = document.querySelectorAll(".mySlides img");
+        
+        // Hide all slides
+        slides.forEach(slide => slide.style.display = "none");
+
+        // Show the current slide
+        slides[slideIndex].style.display = "block";
+
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;  // Reset index to loop
+        }
+      }
+
+      setInterval(showSlides, 3000);  // Change image every 3 seconds
+      showSlides();  // Initialize the slideshow
+    </script>
+  </main>
+
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Gore English School ,Chousala. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/gore_english_school_chousala/" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+       </div>
+    </div>
+  </footer>
+</body>
+</html>

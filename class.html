@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes - Sunshine English School, Satara</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="styles.css">  
+  <style>    
+    /* Classes Section */
+    .classes-main {
+      background-color: white;
+      padding: 60px 0;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      margin: 0 auto 60px;
+      max-width: 1200px;
+      overflow: hidden;
+    }
+    
+    .classes-container {
+      padding: 0 30px;
+    }
+    
+    .classes-intro {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .classes-intro h2 {
+      color: #333;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+    
+    .classes-intro h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 4px;
+      background: var(--accent-color);
+    }
+    
+    .classes-intro p {
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .classes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .class-card {
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .class-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .class-card-inner {
+      padding: 25px;
+    }
+    
+    .class-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .class-icon {
+      width: 50px;
+      height: 50px;
+      background-color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 15px;
+      color: white;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .class-card:hover .class-icon {
+      transform: rotateY(360deg);
+    }
+    
+    .class-title {
+      color: #333;
+      font-size: 1.5rem;
+      margin-bottom: 0;
+    }
+    
+    .class-description {
+      color: #666;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .class-features {
+      list-style: none;
+    }
+    
+    .class-features li {
+      color: #555;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+    
+    .class-features li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: var(--accent-color);
+    }
+    
+    .class-image {
+      height: 180px;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    
+    .class-image::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    }
+    
+    .class-level {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      z-index: 2;
+    }
+    
+    /* Teaching Approach Section */
+    .teaching-approach {
+      padding: 60px 30px;
+      background: linear-gradient(135deg, #fff6e5, #ffefd1);
+      margin-bottom: 60px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .approach-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .approach-title h2 {
+      color: #333;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+    
+    .approach-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--accent-color);
+    }
+    
+    .approach-title p {
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+    
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    
+    .approach-item {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .approach-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background-color: var(--accent-color);
+      transition: all 0.3s ease;
+    }
+    
+    .approach-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .approach-item:hover::before {
+      width: 100%;
+      height: 5px;
+    }
+    
+    .approach-icon {
+      font-size: 36px;
+      color: var(--accent-color);
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .approach-item:hover .approach-icon {
+      transform: scale(1.2);
+    }
+    
+    .approach-item h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    
+    .approach-item p {
+      color: #666;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    
+    /* Achievements Section */
+    .achievements-section {
+      padding: 60px 0;
+      position: relative;
+      margin-bottom: 60px;
+    }
+    
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    
+    .achievement-card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .achievement-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .achievement-icon {
+      font-size: 40px;
+      color: var(--accent-color);
+      margin-bottom: 20px;
+    }
+    
+    .achievement-number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .achievement-title {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    
+    /* FAQ Section */
+    .faq-section {
+      background-color: white;
+      padding: 60px 0;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      margin: 0 auto 60px;
+      max-width: 1200px;
+    }
+    
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .faq-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .faq-title h2 {
+      color: #333;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+    
+    .faq-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--accent-color);
+    }
+    
+    .faq-item {
+      margin-bottom: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      background-color: #f9f9f9;
+      padding: 20px;
+      cursor: pointer;
+      position: relative;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    
+    .faq-question:hover {
+      background-color: #f5f5f5;
+    }
+    
+    .faq-question::after {
+      content: '\f078';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+    
+    .faq-item.active .faq-question::after {
+      transform: rotate(180deg);
+    }
+    
+    .faq-answer {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      background-color: white;
+    }
+    
+    .faq-item.active .faq-answer {
+      padding: 20px;
+      max-height: 500px;
+    }
+    /* Call to Action Section */
+    .cta-section {
+      background: linear-gradient(135deg, #f5b700, #ffca3a);
+      padding: 60px 0;
+      text-align: center;
+      border-radius: 15px;
+      margin: 0 auto 60px;
+      max-width: 1200px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      width: 100px;
+      height: 100px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+    
+    .cta-section::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      right: -50px;
+      width: 100px;
+      height: 100px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+    
+    .cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .cta-content h2 {
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .cta-content p {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: white;
+      color: var(--accent-color);
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .counter-animation {
+      animation: countUp 2s ease-out forwards;
+    }
+
+    @keyframes countUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .floating {
+      animation: floating 3s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }   
+    @media (max-width: 768px) {      
+      .classes-intro h2,
+      .approach-title h2,
+      .faq-title h2 {
+        font-size: 2rem;
+      }
+      
+      .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 576px) {
+         
+      .classes-intro h2,
+      .approach-title h2,
+      .faq-title h2 {
+        font-size: 1.8rem;
+      }
+      
+      .achievements-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="school-name">
+        <h1>Sunshine English School, Satara</h1>
+      </div>
+      <img src="images/school.jpeg" alt="School Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="class.html" class="nav-link">Classes</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="admission.html" class="nav-link">Admission</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Our Class Structure</h1>
+        <p>Nurturing Young Minds from Primary to Secondary Education</p>
+      </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="classes-main">
+      <div class="container">
+        <div class="classes-container">
+          <div class="classes-intro">
+            <h2 class="fade-in">Educational Journey at Sunshine English School</h2>
+            <p class="fade-in-up">Our comprehensive curriculum is designed to foster holistic development, critical thinking, and academic excellence at every grade level. We provide a nurturing environment where each student can discover their potential and develop a lifelong passion for learning.</p>
+          </div>
+          
+          <div class="classes-grid">
+            <div class="class-card fade-in" style="animation-delay: 0.1s">
+              <div class="class-image" style="background-image: url('/api/placeholder/400/250')">
+                <span class="class-level">Primary</span>
+              </div>
+              <div class="class-card-inner">
+                <div class="class-header">
+                  <div class="class-icon">
+                    <i class="fas fa-child"></i>
+                  </div>
+                  <h3 class="class-title">Class 1-2</h3>
+                </div>
+                <p class="class-description">Building a strong foundation through play-based learning and core skill development in a nurturing environment.</p>
+                <ul class="class-features">
+                  <li>Introduction to language skills through storytelling</li>
+                  <li>Basic mathematical concepts through hands-on activities</li>
+                  <li>Social development through group activities</li>
+                  <li>Introduction to environmental awareness</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="class-card fade-in" style="animation-delay: 0.2s">
+              <div class="class-image" style="background-image: url('/api/placeholder/400/250')">
+                <span class="class-level">Primary</span>
+              </div>
+              <div class="class-card-inner">
+                <div class="class-header">
+                  <div class="class-icon">
+                    <i class="fas fa-book-reader"></i>
+                  </div>
+                  <h3 class="class-title">Class 3-5</h3>
+                </div>
+                <p class="class-description">Expanding knowledge base and encouraging curiosity through interactive learning experiences.</p>
+                <ul class="class-features">
+                  <li>Enhanced reading and writing skills</li>
+                  <li>Introduction to scientific concepts</li>
+                  <li>Development of critical thinking skills</li>
+                  <li>Basic computer literacy</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="class-card fade-in" style="animation-delay: 0.3s">
+              <div class="class-image" style="background-image: url('/api/placeholder/400/250')">
+                <span class="class-level">Middle</span>
+              </div>
+              <div class="class-card-inner">
+                <div class="class-header">
+                  <div class="class-icon">
+                    <i class="fas fa-microscope"></i>
+                  </div>
+                  <h3 class="class-title">Class 6-8</h3>
+                </div>
+                <p class="class-description">Developing deeper subject knowledge and analytical skills through comprehensive studies.</p>
+                <ul class="class-features">
+                  <li>Advanced mathematics and problem-solving</li>
+                  <li>In-depth science experiments and concepts</li>
+                  <li>Literary analysis and creative writing</li
+                    <li>Literary analysis and creative writing</li>
+                  <li>Social studies and cultural awareness</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="class-card fade-in" style="animation-delay: 0.4s">
+              <div class="class-image" style="background-image: url('/api/placeholder/400/250')">
+                <span class="class-level">Secondary</span>
+              </div>
+              <div class="class-card-inner">
+                <div class="class-header">
+                  <div class="class-icon">
+                    <i class="fas fa-atom"></i>
+                  </div>
+                  <h3 class="class-title">Class 9-10</h3>
+                </div>
+                <p class="class-description">Preparing students for board examinations with specialized subject teaching and exam strategies.</p>
+                <ul class="class-features">
+                  <li>Board examination preparation</li>
+                  <li>Advanced science and mathematics</li>
+                  <li>Language proficiency and literature</li>
+                  <li>Career guidance and counseling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaching Approach Section -->
+    <section class="teaching-approach">
+      <div class="container">
+        <div class="approach-title">
+          <h2 class="fade-in">Our Teaching Approach</h2>
+          <p class="fade-in-up">At Sunshine English School, we believe in a holistic approach to education that nurtures not just academic excellence but also character and life skills.</p>
+        </div>
+        
+        <div class="approach-grid">
+          <div class="approach-item fade-in" style="animation-delay: 0.1s">
+            <div class="approach-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Experiential Learning</h3>
+            <p>We encourage learning through hands-on activities, experiments, and real-world applications to make concepts more tangible and memorable.</p>
+          </div>
+          
+          <div class="approach-item fade-in" style="animation-delay: 0.2s">
+            <div class="approach-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Collaborative Environment</h3>
+            <p>Our classrooms foster teamwork, communication, and mutual respect through group projects and peer learning exercises.</p>
+          </div>
+          
+          <div class="approach-item fade-in" style="animation-delay: 0.3s">
+            <div class="approach-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Critical Thinking</h3>
+            <p>We challenge students to think analytically, question assumptions, and develop problem-solving skills applicable across subjects.</p>
+          </div>
+          
+          <div class="approach-item fade-in" style="animation-delay: 0.4s">
+            <div class="approach-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Character Development</h3>
+            <p>Values education is integrated into our curriculum to nurture ethical behavior, empathy, and social responsibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section">
+      <div class="container">
+        <div class="approach-title">
+          <h2 class="fade-in">Our Academic Achievements</h2>
+          <p class="fade-in-up">Our students consistently demonstrate excellence in academics, sports, and extracurricular activities.</p>
+        </div>
+        
+        <div class="achievements-grid">
+          <div class="achievement-card counter-animation" style="animation-delay: 0.1s">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="achievement-number">98%</div>
+            <div class="achievement-title">Board Exam Pass Rate</div>
+          </div>
+          
+          <div class="achievement-card counter-animation" style="animation-delay: 0.2s">
+            <div class="achievement-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="achievement-number">45+</div>
+            <div class="achievement-title">State-Level Awards</div>
+          </div>
+          
+          <div class="achievement-card counter-animation" style="animation-delay: 0.3s">
+            <div class="achievement-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="achievement-number">2500+</div>
+            <div class="achievement-title">Successful Alumni</div>
+          </div>
+          
+          <div class="achievement-card counter-animation" style="animation-delay: 0.4s">
+            <div class="achievement-icon">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <div class="achievement-number">25+</div>
+            <div class="achievement-title">Qualified Teachers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <div class="faq-title">
+          <h2 class="fade-in">Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">What is the student-teacher ratio at Sunshine English School?</div>
+            <div class="faq-answer">
+              <p>We maintain a student-teacher ratio of 25:1 to ensure personalized attention and quality education for every student. Additional teaching assistants are available for primary classes to provide extra support.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Does the school offer any extracurricular activities?</div>
+            <div class="faq-answer">
+              <p>Yes, we offer a wide range of extracurricular activities including sports (cricket, basketball, volleyball), performing arts (music, dance, drama), visual arts, debate, robotics, and various clubs to nurture diverse talents and interests.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">What board curriculum does the school follow?</div>
+            <div class="faq-answer">
+              <p>Sunshine English School follows the Maharashtra State Board curriculum. We focus on comprehensive coverage of the syllabus with additional enrichment programs to enhance learning beyond textbooks.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Are there remedial classes for students who need extra help?</div>
+            <div class="faq-answer">
+              <p>Yes, we provide remedial classes after school hours for students who need additional support in specific subjects. Our teachers identify learning gaps and provide targeted assistance to ensure no student is left behind.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">How does the school assess student progress?</div>
+            <div class="faq-answer">
+              <p>We follow a continuous evaluation system that includes regular formative assessments, project work, class participation, term examinations, and comprehensive feedback. Progress reports are shared with parents quarterly along with parent-teacher meetings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2>Ready to Join Our School Community?</h2>
+        <p>Give your child the gift of quality education and a nurturing environment for holistic development.</p>
+        <a href="admission.html" class="cta-button">Apply for Admission <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Academics</a></li>
+            <li><a href="admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Facilities</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Science Laboratories</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Library</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Sports Complex</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Auditorium</a></li>
+            <li><a href="hostel.html"><i class="fas fa-chevron-right"></i> Hostel</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contact Information</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <span>Sunshine English School, Satara, Maharashtra - 415001</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt contact-icon"></i>
+              <span>+91 9876543210, +91 9876543211</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope contact-icon"></i>
+              <span>info@sunshineeschool.edu.in</span>
+            </li>
+            <li>
+              <i class="fas fa-clock contact-icon"></i>
+              <span>Mon - Sat: 8:00 AM - 4:00 PM</span>
+            </li>
+          </ul>
+          
+          <div class="social-icons">
+            <a href="https://facebook.com" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/gore_english_school_chousala/" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 20Sunshine English School, Chousala. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // FAQ Accordion
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+          const currentlyActive = document.querySelector('.faq-item.active');
+          
+          if(currentlyActive && currentlyActive !== item) {
+            currentlyActive.classList.remove('active');
+          }
+          
+          item.classList.toggle('active');
+        });
+      });
+      
+      // Scroll animations
+      const fadeElements = document.querySelectorAll('.fade-in, .fade-in-up, .fade-in-down');
+      
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      fadeElements.forEach(element => {
+        element.style.opacity = 0;
+        observer.observe(element);
+      });
+      
+      // Counter animation for achievements
+      const counterElements = document.querySelectorAll('.counter-animation');
+      
+      const counterObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('counting');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      counterElements.forEach(element => {
+        counterObserver.observe(element);
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission - Sunshine English School, Satara</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="styles.css">  
+  </head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="school-name">
+        <h1>Sunshine English School, Satara</h1>
+      </div>
+      <img src="images/school.jpeg" alt="School Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="class.html" class="nav-link">Classes</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="admission.html" class="nav-link">Admission</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Admission Process</h1>
+        <p>Join our community of learners and begin your journey towards excellence</p>
+      </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="application-section">
+      <div class="container">
+        <div class="application-container">
+          <div class="section-title">
+            <h2>Application Form</h2>
+            <p>Please fill out the form below accurately. Fields marked with <span class="required-mark">*</span> are mandatory.</p>
+          </div>
+
+          <form id="application">
+            <!-- Progress Steps -->
+            <div class="progress-container">
+              <div class="progress-steps">
+                <div class="progress-step">
+                  <div class="step-bubble active">1</div>
+                  <div class="step-label active">Student Details</div>
+                </div>
+                <div class="progress-step">
+                  <div class="step-bubble">2</div>
+                  <div class="step-label">Parent Details</div>
+                </div>
+                <div class="progress-step">
+                  <div class="step-bubble">3</div>
+                  <div class="step-label">Academic Information</div>
+                </div>
+                <div class="progress-step">
+                  <div class="step-bubble">4</div>
+                  <div class="step-label">Documents Upload</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Student Details Section -->
+            <div class="form-section active">
+              <div class="info-panel">
+                <div class="info-panel-title">
+                  <i class="fas fa-info-circle"></i> Student Information
+                </div>
+                <p>Please provide accurate personal details of the student applying for admission.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">First Name <span class="required-mark">*</span></label>
+                    <input type="text" class="form-control" id="first-name" required>
+                  </div>
+                </div>
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Middle Name</label>
+                    <input type="text" class="form-control" id="middle-name">
+                  </div>
+                </div>
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Last Name <span class="required-mark">*</span></label>
+                    <input type="text" class="form-control" id="last-name" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Date of Birth <span class="required-mark">*</span></label>
+                    <input type="date" class="form-control" id="dob" required>
+                  </div>
+                </div>
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Gender <span class="required-mark">*</span></label>
+                    <select class="form-select" id="gender" required>
+                      <option value="">Select Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Blood Group</label>
+                    <select class="form-select" id="blood-group">
+                      <option value="">Select Blood Group</option>
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                      <option value="O+">O+</option>
+                      <option value="O-">O-</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Nationality <span class="required-mark">*</span></label>
+                    <input type="text" class="form-control" id="nationality" required value="Indian">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Applying for Class <span class="required-mark">*</span></label>
+                <select class="form-select" id="applying-class" required>
+                  <option value="">Select Class</option>
+                  <option value="nursery">Nursery</option>
+                  <option value="lkg">Lower Kindergarten (LKG)</option>
+                  <option value="ukg">Upper Kindergarten (UKG)</option>
+                  <option value="1">Class 1</option>
+                  <option value="2">Class 2</option>
+                  <option value="3">Class 3</option>
+                  <option value="4">Class 4</option>
+                  <option value="5">Class 5</option>
+                  <option value="6">Class 6</option>
+                  <option value="7">Class 7</option>
+                  <option value="8">Class 8</option>
+                  <option value="9">Class 9</option>
+                  <option value="10">Class 10</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Academic Year <span class="required-mark">*</span></label>
+                <select class="form-select" id="academic-year" required>
+                  <option value="2025-2026">2025-2026</option>
+                  <option value="2026-2027">2026-2027</option>
+                </select>
+              </div>
+
+              <div class="form-nav">
+                <div></div> <!-- Empty div for spacing -->
+                <button type="button" class="btn btn-next" id="next-1">Next Step</button>
+              </div>
+            </div>
+
+            <!-- Parent Details Section -->
+            <div class="form-section">
+              <div class="info-panel">
+                <div class="info-panel-title">
+                  <i class="fas fa-info-circle"></i> Parent/Guardian Information
+                </div>
+                <p>Please provide contact details of parents or guardians.</p>
+              </div>
+
+              <h3 style="margin-bottom: 20px; color: #333;">Father's Details</h3>
+              <div class="form-row">
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Father's Name <span class="required-mark">*</span></label>
+                    <input type="text" class="form-control" id="father-name" required>
+                  </div>
+                </div>
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Father's Occupation</label>
+                    <input type="text" class="form-control" id="father-occupation">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Father's Mobile <span class="required-mark">*</span></label>
+                    <input type="tel" class="form-control" id="father-mobile" required>
+                  </div>
+                </div>
+                <div class="form-col">
+                  <div class="form-group">
+                    <label class="form-label">Father's Email</label>
+                    <input type="email" class="form-control" id="father-email">
+                  </div>
+                </div>
+              </div>
+
+             <!-- Parent Details Section (continuation) -->
+<h3 style="margin: 30px 0 20px; color: #333;">Mother's Details</h3>
+<div class="form-row">
+  <div class="form-col">
+    <div class="form-group">
+      <label class="form-label">Mother's Name <span class="required-mark">*</span></label>
+      <input type="text" class="form-control" id="mother-name" required>
+    </div>
+  </div>
+  <div class="form-col">
+    <div class="form-group">
+      <label class="form-label">Mother's Occupation</label>
+      <input type="text" class="form-control" id="mother-occupation">
+    </div>
+  </div>
+</div>
+
+<div class="form-row">
+  <div class="form-col">
+    <div class="form-group">
+      <label class="form-label">Mother's Mobile</label>
+      <input type="tel" class="form-control" id="mother-mobile">
+    </div>
+  </div>
+  <div class="form-col">
+    <div class="form-group">
+      <label class="form-label">Mother's Email</label>
+      <input type="email" class="form-control" id="mother-email">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="form-label">Residential Address <span class="required-mark">*</span></label>
+  <textarea class="form-control" id="address" rows="3" required></textarea>
+</div>
+
+<div class="form-row">
+  <div class="form-col">
+    <div class="form-group">
+      <label class="form-label">City <span class="required-mark">*</span></label>
+      <input type="text" class="form-control" id="city" required>
+    </div>
+  </div>
+  <div class="form-col">
+    <div class="form-group">
+      <label class="form-label">Pincode <span class="required-mark">*</span></label>
+      <input type="text" class="form-control" id="pincode" required>
+    </div>
+  </div>
+</div>
+
+<div class="form-nav">
+  <button type="button" class="btn btn-prev" id="prev-2">Previous Step</button>
+  <button type="button" class="btn btn-next" id="next-2">Next Step</button>
+</div>
+</div>
+
+<!-- Academic Information Section -->
+<div class="form-section">
+  <div class="info-panel">
+    <div class="info-panel-title">
+      <i class="fas fa-info-circle"></i> Academic Background
+    </div>
+    <p>Please provide information about the student's previous academic background.</p>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Previous School (if any)</label>
+    <input type="text" class="form-control" id="previous-school">
+  </div>
+
+  <div class="form-row">
+    <div class="form-col">
+      <div class="form-group">
+        <label class="form-label">Last Class Completed</label>
+        <select class="form-select" id="last-class">
+          <option value="">Select Class</option>
+          <option value="nursery">Nursery</option>
+          <option value="lkg">Lower Kindergarten (LKG)</option>
+          <option value="ukg">Upper Kindergarten (UKG)</option>
+          <option value="1">Class 1</option>
+          <option value="2">Class 2</option>
+          <option value="3">Class 3</option>
+          <option value="4">Class 4</option>
+          <option value="5">Class 5</option>
+          <option value="6">Class 6</option>
+          <option value="7">Class 7</option>
+          <option value="8">Class 8</option>
+          <option value="9">Class 9</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-col">
+      <div class="form-group">
+        <label class="form-label">Year of Completion</label>
+        <select class="form-select" id="completion-year">
+          <option value="">Select Year</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Medium of Instruction</label>
+    <select class="form-select" id="medium">
+      <option value="">Select Medium</option>
+      <option value="english">English</option>
+      <option value="marathi">Marathi</option>
+      <option value="hindi">Hindi</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Special Achievements (if any)</label>
+    <textarea class="form-control" id="achievements" rows="3"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Does the student have any special needs or requirements?</label>
+    <div class="form-check">
+      <input type="radio" name="special-needs" id="special-needs-yes" value="yes">
+      <label for="special-needs-yes">Yes</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" name="special-needs" id="special-needs-no" value="no" checked>
+      <label for="special-needs-no">No</label>
+    </div>
+  </div>
+
+  <div class="form-group" id="special-needs-details" style="display: none;">
+    <label class="form-label">Please provide details about special needs</label>
+    <textarea class="form-control" id="special-needs-info" rows="3"></textarea>
+  </div>
+
+  <div class="form-nav">
+    <button type="button" class="btn btn-prev" id="prev-3">Previous Step</button>
+    <button type="button" class="btn btn-next" id="next-3">Next Step</button>
+  </div>
+</div>
+
+<!-- Documents Upload Section -->
+<div class="form-section">
+  <div class="info-panel">
+    <div class="info-panel-title">
+      <i class="fas fa-info-circle"></i> Document Upload
+    </div>
+    <p>Please upload clear scanned copies of the following documents. Acceptable formats: JPG, PNG, PDF (Max size: 2MB per file)</p>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Student's Passport Size Photo <span class="required-mark">*</span></label>
+    <div class="file-upload">
+      <label class="file-upload-label">
+        <i class="fas fa-upload"></i> Choose File
+        <input type="file" id="student-photo" accept="image/*" required>
+      </label>
+      <span class="file-name" id="student-photo-name">No file chosen</span>
+    </div>
+    <p class="form-note">Please upload a recent passport size photograph with white background</p>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Birth Certificate <span class="required-mark">*</span></label>
+    <div class="file-upload">
+      <label class="file-upload-label">
+        <i class="fas fa-upload"></i> Choose File
+        <input type="file" id="birth-certificate" accept=".jpg,.jpeg,.png,.pdf" required>
+      </label>
+      <span class="file-name" id="birth-certificate-name">No file chosen</span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Previous School Leaving Certificate (if applicable)</label>
+    <div class="file-upload">
+      <label class="file-upload-label">
+        <i class="fas fa-upload"></i> Choose File
+        <input type="file" id="leaving-certificate" accept=".jpg,.jpeg,.png,.pdf">
+      </label>
+      <span class="file-name" id="leaving-certificate-name">No file chosen</span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Previous Academic Year Report Card (if applicable)</label>
+    <div class="file-upload">
+      <label class="file-upload-label">
+        <i class="fas fa-upload"></i> Choose File
+        <input type="file" id="report-card" accept=".jpg,.jpeg,.png,.pdf">
+      </label>
+      <span class="file-name" id="report-card-name">No file chosen</span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Address Proof <span class="required-mark">*</span></label>
+    <div class="file-upload">
+      <label class="file-upload-label">
+        <i class="fas fa-upload"></i> Choose File
+        <input type="file" id="address-proof" accept=".jpg,.jpeg,.png,.pdf" required>
+      </label>
+      <span class="file-name" id="address-proof-name">No file chosen</span>
+    </div>
+    <p class="form-note">Aadhar Card/Ration Card/Electricity Bill/Passport</p>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input type="checkbox" id="terms-check" required>
+      <label for="terms-check">I hereby declare that all the information provided above is true to the best of my knowledge and belief. <span class="required-mark">*</span></label>
+    </div>
+  </div>
+
+  <div class="form-nav">
+    <button type="button" class="btn btn-prev" id="prev-4">Previous Step</button>
+    <button type="submit" class="btn btn-submit" id="submit-form">Submit Application</button>
+  </div>
+</div>
+
+<!-- Success Message -->
+<div class="success-message" id="success-message">
+  <i class="fas fa-check-circle success-icon"></i>
+  <h2>Application Submitted Successfully!</h2>
+  <p>Thank you for submitting your application to Sunshine English School, Satara. Your application has been received and is under review.</p>
+  <p>Application Reference Number: <strong id="reference-number">SES-2025-</strong></p>
+  <p>A confirmation email has been sent to your registered email address with all the details.</p>
+  <p>Our admission team will contact you shortly regarding the next steps.</p>
+  <button type="button" class="btn btn-next" onclick="window.location.href='index.html'">Back to Home</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Academics</a></li>
+          <li><a href="admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+          <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+          <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Facilities</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Science Laboratories</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Library</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Sports Complex</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Auditorium</a></li>
+          <li><a href="hostel.html"><i class="fas fa-chevron-right"></i> Hostel</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Contact Information</h3>
+        <ul class="contact-info">
+          <li>
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <span>Sunshine English School, Satara, Maharashtra - 415001</span>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt contact-icon"></i>
+            <span>+91 9876543210, +91 9876543211</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope contact-icon"></i>
+            <span>info@sunshineeschool.edu.in</span>
+          </li>
+          <li>
+            <i class="fas fa-clock contact-icon"></i>
+            <span>Mon - Sat: 8:00 AM - 4:00 PM</span>
+          </li>
+        </ul>
+        
+        <div class="social-icons">
+          <a href="https://facebook.com" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/gore_english_school_chousala/" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Sunshine English School, Satara. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Form Navigation
+  document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.form-section');
+    const steps = document.querySelectorAll('.step-bubble');
+    const stepLabels = document.querySelectorAll('.step-label');
+    
+    // Next buttons
+    document.getElementById('next-1').addEventListener('click', function() {
+      sections[0].classList.remove('active');
+      sections[1].classList.add('active');
+      steps[0].classList.remove('active');
+      steps[1].classList.add('active');
+      stepLabels[0].classList.remove('active');
+      stepLabels[1].classList.add('active');
+      window.scrollTo(0, 0);
+    });
+    
+    document.getElementById('next-2').addEventListener('click', function() {
+      sections[1].classList.remove('active');
+      sections[2].classList.add('active');
+      steps[1].classList.remove('active');
+      steps[2].classList.add('active');
+      stepLabels[1].classList.remove('active');
+      stepLabels[2].classList.add('active');
+      window.scrollTo(0, 0);
+    });
+    
+    document.getElementById('next-3').addEventListener('click', function() {
+      sections[2].classList.remove('active');
+      sections[3].classList.add('active');
+      steps[2].classList.remove('active');
+      steps[3].classList.add('active');
+      stepLabels[2].classList.remove('active');
+      stepLabels[3].classList.add('active');
+      window.scrollTo(0, 0);
+    });
+    
+    // Previous buttons
+    document.getElementById('prev-2').addEventListener('click', function() {
+      sections[1].classList.remove('active');
+      sections[0].classList.add('active');
+      steps[1].classList.remove('active');
+      steps[0].classList.add('active');
+      stepLabels[1].classList.remove('active');
+      stepLabels[0].classList.add('active');
+      window.scrollTo(0, 0);
+    });
+    
+    document.getElementById('prev-3').addEventListener('click', function() {
+      sections[2].classList.remove('active');
+      sections[1].classList.add('active');
+      steps[2].classList.remove('active');
+      steps[1].classList.add('active');
+      stepLabels[2].classList.remove('active');
+      stepLabels[1].classList.add('active');
+      window.scrollTo(0, 0);
+    });
+    
+    document.getElementById('prev-4').addEventListener('click', function() {
+      sections[3].classList.remove('active');
+      sections[2].classList.add('active');
+      steps[3].classList.remove('active');
+      steps[2].classList.add('active');
+      stepLabels[3].classList.remove('active');
+      stepLabels[2].classList.add('active');
+      window.scrollTo(0, 0);
+    });
+    
+    // Special needs toggle
+    document.getElementById('special-needs-yes').addEventListener('change', function() {
+      document.getElementById('special-needs-details').style.display = 'block';
+    });
+    
+    document.getElementById('special-needs-no').addEventListener('change', function() {
+      document.getElementById('special-needs-details').style.display = 'none';
+    });
+    
+    // File upload name display
+    const fileInputs = ['student-photo', 'birth-certificate', 'leaving-certificate', 'report-card', 'address-proof'];
+    
+    fileInputs.forEach(function(id) {
+      document.getElementById(id).addEventListener('change', function(e) {
+        const fileName = e.target.files[0] ? e.target.files[0].name : 'No file chosen';
+        document.getElementById(id + '-name').textContent = fileName;
+      });
+    });
+    
+    // Form submission
+    document.getElementById('application').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Here you would normally handle form validation and submission
+      // For this example, we'll just show the success message
+      
+      const randomNum = Math.floor(10000 + Math.random() * 90000);
+      document.getElementById('reference-number').textContent = `SES-2025-${randomNum}`;
+      
+      document.querySelector('.application-container').style.display = 'none';
+      document.getElementById('success-message').style.display = 'block';
+      
+      window.scrollTo(0, 0);
+    });
+  });
+</script>
+</body>
+</html>

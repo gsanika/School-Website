@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Sunshine English School, Satara</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="school-name">
+        <h1>Sunshine English School, Satara</h1>
+      </div>
+      <img src="images/school.jpeg" alt="School Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="class.html" class="nav-link">Classes</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="admission.html" class="nav-link">Admission</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Image Slideshow -->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="images/sch.avif" alt="School Building">
+        <div class="slide-caption">
+          <h2>Welcome to Sunshine English School, Satara</h2>
+          <p>Building futures through quality education since 1995</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="images/lobby.jpeg" alt="School Lobby">
+        <div class="slide-caption">
+          <h2>Modern Facilities</h2>
+          <p>State-of-the-art classrooms and learning spaces</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="images/lab.avif" alt="Science Lab">
+        <div class="slide-caption">
+          <h2>Hands-on Learning</h2>
+          <p>Well-equipped labs for practical education</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="images/sports.webp" alt="Sports Day">
+        <div class="slide-caption">
+          <h2>Sports Excellence</h2>
+          <p>Comprehensive sports program to develop athletic skills</p>
+        </div>
+      </div>
+      
+      <div class="slide-indicators">
+        <span class="indicator active" onclick="currentSlide(0)"></span>
+        <span class="indicator" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title fade-in">Excellence in Education</h2>
+        <div class="features-grid">
+          <div class="feature-card slide-in-left" style="animation-delay: 0.2s">
+            <div class="feature-icon float">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="feature-title">Academic Excellence</h3>
+            <p class="feature-description">Our rigorous curriculum is designed to challenge students and prepare them for future academic success. With consistently outstanding results, we focus on holistic development and critical thinking.</p>
+          </div>
+          
+          <div class="feature-card slide-in-left" style="animation-delay: 0.4s">
+            <div class="feature-icon float">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h3 class="feature-title">Modern Laboratories</h3>
+            <p class="feature-description">Fully equipped science, computer, and language labs provide hands-on learning experiences, allowing students to experiment, discover and innovate in a supervised environment.</p>
+          </div>
+          
+          <div class="feature-card slide-in-left" style="animation-delay: 0.6s">
+            <div class="feature-icon float">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="feature-title">Dedicated Faculty</h3>
+            <p class="feature-description">Our experienced teachers are passionate about education and committed to nurturing each student's potential. With personalized attention, they inspire a love for learning.</p>
+          </div>
+          
+          <div class="feature-card slide-in-left" style="animation-delay: 0.8s">
+            <div class="feature-icon float">
+              <i class="fas fa-futbol"></i>
+            </div>
+            <h3 class="feature-title">Sports & Recreation</h3>
+            <p class="feature-description">We believe in the importance of physical fitness alongside academic growth. Our extensive sports facilities include a playground, indoor games, and professional coaching.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- News & Events Section -->
+    <section class="news-events-section">
+      <div class="container">
+        <h2 class="section-title fade-in">Latest News & Events</h2>
+        <div class="news-grid">
+          <div class="news-card slide-up" style="animation-delay: 0.2s">
+            <img src="/api/placeholder/400/200" alt="Annual Day Celebration" class="news-img">
+            <div class="news-content">
+              <span class="news-date">April 15, 2025</span>
+              <h3 class="news-title">Annual Day Celebration</h3>
+              <p class="news-excerpt">Our school's Annual Day was celebrated with great enthusiasm. Students showcased their talents through cultural performances, exhibitions, and presentations.</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          
+          <div class="news-card slide-up" style="animation-delay: 0.4s">
+            <img src="/api/placeholder/400/200" alt="Science Fair" class="news-img">
+            <div class="news-content">
+              <span class="news-date">April 10, 2025</span>
+              <h3 class="news-title">Science Fair Success</h3>
+              <p class="news-excerpt">Our students impressed judges at the district Science Fair, winning top honors for their innovative projects on sustainable energy solutions.</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          
+          <div class="news-card slide-up" style="animation-delay: 0.6s">
+            <img src="/api/placeholder/400/200" alt="Admission Open" class="news-img">
+            <div class="news-content">
+              <span class="news-date">April 5, 2025</span>
+              <h3 class="news-title">Admissions Open for 2025-26</h3>
+              <p class="news-excerpt">Applications are now being accepted for the upcoming academic year. Limited seats available. Contact our admissions office for details.</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+      <div class="why-choose-bg"></div>
+      <div class="container">
+        <div class="why-choose-content">
+          <div class="why-choose-text slide-in-left">
+            <h2 class="section-title" style="text-align: left;">Why Choose Sunshine English School, Satara?</h2>
+            <p>At Sunshine English School, we believe in nurturing not just academic excellence but also character, creativity, and values. Our unique approach to education makes us the preferred choice for parents who want the best for their children.</p>
+            
+            <div class="why-choose-list">
+              <div class="choose-item">
+                <div class="choose-icon">
+                  <i class="fas fa-medal"></i>
+                </div>
+                <div class="choose-text">
+                  <h4>Excellence Tradition</h4>
+                  <p>With over 25 years of educational excellence, we have consistently maintained top academic results while focusing on character development.</p>
+                </div>
+              </div>
+              
+              <div class="choose-item">
+                <div class="choose-icon">
+                  <i class="fas fa-book-reader"></i>
+                </div>
+                <div class="choose-text">
+                  <h4>Holistic Curriculum</h4>
+                  <p>Our curriculum balances academic rigor with arts, sports, and character education to develop well-rounded individuals.</p>
+                </div>
+              </div>
+              
+              <div class="choose-item">
+                <div class="choose-icon">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="choose-text">
+                  <h4>Experienced Educators</h4>
+                  <p>Our faculty comprises experienced educators who are passionate about teaching and committed to student success.</p>
+                </div>
+              </div>
+              
+              <div class="choose-item">
+                <div class="choose-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <div class="choose-text">
+                  <h4>Modern Infrastructure</h4>
+                  <p>From smart classrooms to well-equipped laboratories, our infrastructure provides an ideal learning environment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="why-choose-image slide-in-right">
+            <img src="images/classroom.avif" alt="Students in classroom">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title fade-in">What Parents & Students Say</h2>
+        
+        <div class="testimonials-container">
+          <div class="testimonial active zoom-in">
+            <p class="testimonial-text">Sunshine English School has completely transformed my child's approach to learning. The teachers here don't just teach; they inspire. My daughter's confidence and academic performance have improved tremendously.</p>
+            <div class="testimonial-author">
+              <img src="/api/placeholder/60/60" alt="Parent" class="testimonial-avatar">
+              <div class="author-info">
+                <h4>Priya Sharma</h4>
+                <p class="author-role">Parent of Class 8 Student</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <p class="testimonial-text">The balance between academics, sports, and extracurricular activities Sunshine English School is exceptional. My son has discovered his passion for science while also excelling in cricket. I couldn't ask for a better school.</p>
+            <div class="testimonial-author">
+              <img src="/api/placeholder/60/60" alt="Parent" class="testimonial-avatar">
+              <div class="author-info">
+                <h4>Rajesh Patel</h4>
+                <p class="author-role">Parent of Class 10 Student</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <p class="testimonial-text">As an alumnus, I can confidently say that my years Sunshine English School prepared me well for higher education and life. The values and discipline instilled by the school have shaped my character and career.</p>
+            <div class="testimonial-author">
+              <img src="/api/placeholder/60/60" alt="Alumni" class="testimonial-avatar">
+              <div class="author-info">
+                <h4>Ankit Verma</h4>
+                <p class="author-role">Alumni (2018 Batch)</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-nav">
+            <button class="testimonial-btn" id="prev-testimonial">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="testimonial-btn" id="next-testimonial">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2 class="cta-title pulse">Ready to Join Our School Family?</h2>
+        <p class="cta-text">Take the first step towards a bright future for your child. Schedule a campus visit or apply for admission today.</p>
+        <a href="admission.html" class="cta-btn">Apply for Admission</a>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Academics</a></li>
+            <li><a href="admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Facilities</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Science Laboratories</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Library</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Sports Complex</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Auditorium</a></li>
+            <li><a href="hostel.html"><i class="fas fa-chevron-right"></i> Hostel</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contact Information</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <span>Gore English School, Chousala Village, District Name, State - Pincode</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt contact-icon"></i>
+              <span>+91 9876543210, +91 9876543211</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope contact-icon"></i>
+              <span>info@goreenschool.edu.in</span>
+            </li>
+            <li>
+              <i class="fas fa-clock contact-icon"></i>
+              <span>Mon - Sat: 8:00 AM - 4:00 PM</span>
+            </li>
+          </ul>
+          
+          <div class="social-icons">
+            <a href="https://facebook.com" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/gore_english_school_chousala/" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 20Sunshine English School, Chousala. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Slideshow Functionality
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".mySlides");
+    const indicators = document.querySelectorAll(".indicator");
+    
+    function showSlides() {
+      // Hide all slides
+      slides.forEach(slide => {
+        slide.style.display = "none";
+        slide.classList.remove("active");
+      });
+      
+      // Remove active class from all indicators
+      indicators.forEach(indicator => {
+        indicator.classList.remove("active");
+      });
+      
+      // Show current slide and update indicator
+      slides[slideIndex].style.display = "block";
+      slides[slideIndex].classList.add("active");
+      indicators[slideIndex].classList.add("active");
+      
+      // Move to next slide
+      slideIndex++;
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+      
+      // Set timer for next slide
+      setTimeout(showSlides, 5000);
+    }
+    
+    function currentSlide(index) {
+      slideIndex = index;
+      showSlides();
+    }
+    
+    // Start slideshow
+    showSlides();
+    
+    // Testimonial Functionality
+    const testimonials = document.querySelectorAll(".testimonial");
+    let currentTestimonial = 0;
+    
+    document.getElementById("next-testimonial").addEventListener("click", () => {
+      testimonials[currentTestimonial].classList.remove("active");
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      testimonials[currentTestimonial].classList.add("active", "zoom-in");
+    });
+    
+    document.getElementById("prev-testimonial").addEventListener("click", () => {
+      testimonials[currentTestimonial].classList.remove("active");
+      currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+      testimonials[currentTestimonial].classList.add("active", "zoom-in");
+    });
+
+  </script>
+</body>
+</html>
